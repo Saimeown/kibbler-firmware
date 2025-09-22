@@ -1,6 +1,8 @@
-# Kibbler Firmware
+# Kibbler Firmware Code
 
-This project contains the firmware for the Kibbler smart pet feeder, based on ESP32. It integrates with Blynk and Firebase for remote monitoring, feeding control, and data logging.
+![Demo](./kibbler-device.jpg)
+
+This project contains the firmware code for the Kibbler smart pet feeder, based on ESP32. It integrates with Blynk and Firebase for remote monitoring, feeding control, and data logging.
 
 ## Features
 - Wi-Fi connectivity (credentials stored in `secrets.h`)
@@ -16,7 +18,7 @@ This project contains the firmware for the Kibbler smart pet feeder, based on ES
 
 ## File Structure
 - `kibbler.ino` — Main firmware source code
-- `secrets.h` — **Sensitive credentials and paths** (Wi-Fi, Blynk, Firebase). **Do not share this file publicly.**
+- `secrets.h` — **Sensitive credentials and paths** (Wi-Fi, Blynk, Firebase). **not shared publicly**
 
 ## Setup Instructions
 1. **Install Arduino IDE** and ESP32 board support.
@@ -38,8 +40,7 @@ This project contains the firmware for the Kibbler smart pet feeder, based on ES
 6. **Compile and upload** `kibbler.ino` to your ESP32.
 
 ## Security Notice
-- All sensitive credentials are stored in `secrets.h`. **Never commit this file to public repositories.**
-- Rotate credentials if you suspect they have been exposed.
+- All sensitive credentials are stored in `secrets.h`.
 
 ## Usage
 - Device will connect to Wi-Fi, Blynk, and Firebase on boot.
